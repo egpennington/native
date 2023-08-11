@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Native</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400;1,800&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="main bg-dark">
+    <div class="container">
+      <div class="nav">
+        <ul class="nav-left txt-cap">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#" id="showReservationForm">Reservation</a></li>     
+        </ul>
+        
+        <h2 href="#" class="navbar-logo" id="top">Native</h2>
+        
+        <ul class="nav-right txt-cap">
+          <li><a href="#" id="showGallery" class="txt-cap">Gallery</a></li> <!-- Added Gallery link -->
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <div class="page1">
+        <div class="reservation-form" id="reservation-form">
+        <h2 class="form-title">Book a Tour</h2>
+        <form action="#" method="post">
+          <!-- Your form fields here -->
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required><br><br>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required><br><br>
+          
+          <label for="tour-date">Tour Date:</label>
+          <input type="date" id="tour-date" name="tour-date" required><br><br>
+          
+          <label for="tour-type">Tour Type:</label>
+          <select id="tour-type" name="tour-type" required>
+            <option value="one-day">One Day Tour</option>
+            <option value="multi-day">Multi-Day Tour</option>
+            <option value="restaurants">Restaurants/Food</option>
+            <option value="k-drama">K-Drama Sites</option>
+            <option value="k-pop">K-Pop Sites</option>
+          </select><br><br>
+          
+          <button type="submit" class="btn btn-submit txt-cap">Submit Reservation</button>
+          <button type="button" class="btn btn-submit close-form"><i class="fa-solid fa-xmark"></i> Close</button>
+        </form>
+        <div class="thank-you-message" id="thank-you-message" style="display: block;">
+  <p>Thank you for booking your tour with us! We will contact you shortly.</p>
+</div>
+      </div>
+      
+      <div class="hero">
+        <p class="txt-cap"><span class="txt-hl">Tours</span> / Restaurants</p>
+        <p class="txt-cap">K-Drama sites / <span class="txt-hl">K-Pop sites</span></p>
+        <h1 class="txt-lg">Native</h1>
+        <p>Get a Personalized 5-Star rated Tours anywhere in Korea. Airport Pickups and drop offs, one day and multiday trips. Hassle-free itinerary planning to suit your preferences.
+        <br><br> Explore like a native.</p>
+        <a href="#" class="btn txt-cap" id="showReservationForm">Make Reservation</a>        
+      </div>
+        
+      </div>
+      
+      <div class="page2">
+        <section class="gallery" id="gallery">
+        <h2 class="form-title">Gallery</h2>
+        <h5>
+        <a href="#top">back to top</a>
+        </h5>
+        <div class="gallery-images">
+          <!-- Gallery images will be added here through JavaScript -->
+        </div>
+      </section>
+        
+      </div>
+      
+ 
+      <footer>
+        <ul class="footer-left">
+          <li><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-x-twitter fa-lg"></i></a></li>
+          <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f fa-lg"></i></a></li>
+          <li><a href="https://www.wechat.com/ko/" target="_blank"><i class="fa-brands fa-weixin fa-lg"></i></a></li>
+        </ul>
+        <p><span><a href="https://goo.gl/maps/BzpAf92tYSG2sFcx9" target="_blank"><i class="fa-solid fa-location-dot txt-hl"></i></a></span> 58 Myeongdong 8ga-gil, Jung-gu, Seoul, South Korea</p>
+      </footer>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
